@@ -201,8 +201,8 @@ namespace SharpWebAuthn
             if (args.Length < 1)
             {
                 Console.Error.WriteLine("Usage:");
-                Console.Error.WriteLine("  webauthn.exe list");
-                Console.Error.WriteLine("  webauthn.exe assert <credential_number> <challenge_json>");
+                Console.Error.WriteLine("  SharpWebAuthn.exe list");
+                Console.Error.WriteLine("  SharpWebAuthn.exe assert <credential_number> <challenge_json>");
                 return 1;
             }
 
@@ -217,7 +217,7 @@ namespace SharpWebAuthn
             {
                 if (args.Length != 3)
                 {
-                    Console.Error.WriteLine($"Usage: webauthn.exe assert <credential_number> <challenge_json>");
+                    Console.Error.WriteLine($"Usage: SharpWebAuthn.exe assert <credential_number> <challenge_json>");
                     return 1;
                 }
 
